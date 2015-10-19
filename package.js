@@ -14,17 +14,15 @@ Package.onUse(function(api) {
   api.versionsFrom('1.2.0.2');
   api.use('ecmascript');
   api.use('templating', 'client');
-
-  api.addFiles('flexslider.js');
-
-  api.addFiles(['flexslider.js', 'flexslider.less', 'config.rb'], 'client');
-  api.addFiles('css/base.less', 'client');
-  api.addFiles('css/font.less', 'client');
-  api.addFiles('css/mixins.less', 'client');
-  api.addFiles('css/resets.less', 'client');
-  api.addFiles('css/responsive.less', 'client');
-  api.addFiles('css/theme.less', 'client');
-  api.addFiles('css/variables.less', 'client');
+  api.addFiles('flexslider.js', 'client');
+  api.addAssets('flexslider.less', 'client');
+  api.addAssets('css/base.less', 'client');
+  api.addAssets('css/font.less', 'client');
+  api.addAssets('css/mixins.less', 'client');
+  api.addAssets('css/resets.less', 'client');
+  api.addAssets('css/responsive.less', 'client');
+  api.addAssets('css/theme.less', 'client');
+  api.addAssets('css/variables.less', 'client');
   api.addAssets('fonts/flexslider-icon.eot', 'client');
   api.addAssets('fonts/flexslider-icon.svg', 'client');
   api.addAssets('fonts/flexslider-icon.ttf', 'client');
